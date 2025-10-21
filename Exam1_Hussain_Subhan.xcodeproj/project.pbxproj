@@ -6,14 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0CB2EAA02E85FA3700053E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2EA9D2E85FA3700053E03 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0CB2EA592E85E90700053E03 /* Exam1_Hussain_Subhan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exam1_Hussain_Subhan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB2EA9D2E85FA3700053E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0CB2EA5B2E85E90700053E03 /* Exam1_Hussain_Subhan */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Exam1_Hussain_Subhan;
+			sourceTree = "<group>";
+		};
+		0CB2EA932E85FA3700053E03 /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CB2EA952E85FA3700053E03 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CB2EA9C2E85FA3700053E03 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +54,10 @@
 			children = (
 				0CB2EA5B2E85E90700053E03 /* Exam1_Hussain_Subhan */,
 				0CB2EA5A2E85E90700053E03 /* Products */,
+				0CB2EA932E85FA3700053E03 /* Data */,
+				0CB2EA952E85FA3700053E03 /* Models */,
+				0CB2EA9C2E85FA3700053E03 /* Views */,
+				0CB2EA9D2E85FA3700053E03 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +86,9 @@
 			);
 			fileSystemSynchronizedGroups = (
 				0CB2EA5B2E85E90700053E03 /* Exam1_Hussain_Subhan */,
+				0CB2EA932E85FA3700053E03 /* Data */,
+				0CB2EA952E85FA3700053E03 /* Models */,
+				0CB2EA9C2E85FA3700053E03 /* Views */,
 			);
 			name = Exam1_Hussain_Subhan;
 			packageProductDependencies = (
@@ -109,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB2EAA02E85FA3700053E03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

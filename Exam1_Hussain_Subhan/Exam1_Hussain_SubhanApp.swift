@@ -5,28 +5,17 @@
 //  Created by Subhan Hussain on 9/25/25.
 //
 
+
 import SwiftUI
-import SwiftData
 
 @main
-struct Exam1_Hussain_SubhanApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+struct National_Parks_AppApp: App {
+    @StateObject private var dataStore = DataStore()  // Initializing DataStore
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(dataStore)  // Injecting DataStore to RootView
         }
-        .modelContainer(sharedModelContainer)
     }
 }
